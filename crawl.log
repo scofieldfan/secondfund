@@ -1,0 +1,17 @@
+
+[20130523 10:58:01] begin crawl http://www.bjjs.gov.cn/tabid/2167/Default.aspx
+[20130523 10:58:09] write file /search/secondfund/data/fund.out.20130522
+[20130523 10:58:09] 20130522 second fund sell no is 385
+[20130523 10:58:09] insert into secondfund values('20130522','385')
+# On branch master
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   crawl.log
+#	deleted:    data/test
+#	modified:   run.sh
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+Everything up-to-date
+Branch master set up to track remote branch master from origin.
