@@ -20,3 +20,8 @@ Branch master set up to track remote branch master from origin.
 [20130524 08:00:02] write file /search/secondfund/data/fund.out.20130523
 [20130524 08:00:02] 20130523 second fund sell no is 349
 [20130524 08:00:02] insert into secondfund values('20130523','349')
+[master 450b9a7] 20130524 add crawl data
+ 1 files changed, 5 insertions(+), 0 deletions(-)
+To git@github.com:YouYouCook/secondfund.git
+   75d6f36..450b9a7  master -> master
+Branch master set up to track remote branch master from origin.
