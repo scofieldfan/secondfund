@@ -3,5 +3,6 @@ echo "***************$Date begin crawl web *************************************
 cd /search/secondfund
 git add data/*
 python /search/secondfund/crawl.py 
+sleep 30
 git commit -a -m "$Date add crawl data" 
 git push -u origin master 
