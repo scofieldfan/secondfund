@@ -15,3 +15,8 @@
 no changes added to commit (use "git add" and/or "git commit -a")
 Everything up-to-date
 Branch master set up to track remote branch master from origin.
+***************20130524 begin crawl web **************************************
+[20130524 08:00:02] begin crawl http://www.bjjs.gov.cn/tabid/2167/Default.aspx
+[20130524 08:00:02] write file /search/secondfund/data/fund.out.20130523
+[20130524 08:00:02] 20130523 second fund sell no is 349
+[20130524 08:00:02] insert into secondfund values('20130523','349')
