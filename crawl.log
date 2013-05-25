@@ -40,3 +40,13 @@ Traceback (most recent call last):
   File "/usr/lib64/python2.4/site-packages/MySQLdb/connections.py", line 35, in defaulterrorhandler
     raise errorclass, errorvalue
 _mysql_exceptions.IntegrityError: (1062, "Duplicate entry '20130523' for key 1")
+[master 3ec869e] 20130524 add crawl data
+ 1 files changed, 15 insertions(+), 0 deletions(-)
+To git@github.com:YouYouCook/secondfund.git
+   a144c83..3ec869e  master -> master
+Branch master set up to track remote branch master from origin.
+***************20130525 begin crawl web **************************************
+[20130525 11:04:01] begin crawl http://www.bjjs.gov.cn/tabid/2167/Default.aspx
+[20130525 11:04:17] write file /search/secondfund/data/fund.out.20130524
+[20130525 11:04:17] 20130524 second fund sell no is 434
+[20130525 11:04:17] insert into secondfund values('20130524','434')
