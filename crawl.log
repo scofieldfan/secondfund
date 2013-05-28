@@ -104,3 +104,8 @@ Traceback (most recent call last):
   File "/usr/lib64/python2.4/site-packages/MySQLdb/connections.py", line 35, in defaulterrorhandler
     raise errorclass, errorvalue
 _mysql_exceptions.IntegrityError: (1062, "Duplicate entry '20130527' for key 1")
+[master 8cceba6] 20130528 add crawl data
+ 2 files changed, 103 insertions(+), 82 deletions(-)
+To git@github.com:YouYouCook/secondfund.git
+   fd5286a..8cceba6  master -> master
+Branch master set up to track remote branch master from origin.
