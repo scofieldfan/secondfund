@@ -83,3 +83,24 @@ Branch master set up to track remote branch master from origin.
 [20130528 00:09:03] write file /search/secondfund/data/fund.out.20130527
 [20130528 00:09:03] 20130527 second fund sell no is 65
 [20130528 00:09:03] insert into secondfund values('20130527','65')
+[master fd5286a] 20130528 add crawl data
+ 2 files changed, 1810 insertions(+), 0 deletions(-)
+ create mode 100644 data/fund.out.20130527
+To git@github.com:YouYouCook/secondfund.git
+   44d41d0..fd5286a  master -> master
+Branch master set up to track remote branch master from origin.
+***************20130528 begin crawl web **************************************
+[20130528 10:42:01] begin crawl http://www.bjjs.gov.cn/tabid/2167/Default.aspx
+[20130528 10:42:12] write file /search/secondfund/data/fund.out.20130527
+[20130528 10:42:12] 20130527 second fund sell no is 488
+[20130528 10:42:12] insert into secondfund values('20130527','488')
+Traceback (most recent call last):
+  File "/search/secondfund/crawl.py", line 46, in ?
+    insertToDb(yestStr,sN)
+  File "/search/secondfund/crawl.py", line 16, in insertToDb
+    cur.execute(sqlStr);
+  File "/usr/lib64/python2.4/site-packages/MySQLdb/cursors.py", line 163, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.4/site-packages/MySQLdb/connections.py", line 35, in defaulterrorhandler
+    raise errorclass, errorvalue
+_mysql_exceptions.IntegrityError: (1062, "Duplicate entry '20130527' for key 1")
