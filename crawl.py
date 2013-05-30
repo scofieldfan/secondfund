@@ -4,6 +4,7 @@ import urllib2
 import datetime
 import MySQLdb
 
+myUrl='http://secondhandhouse.duapp.com/insert.jsp?fundate=%s&num=%s'
 startTag='<span id="ess_ctr5112_FDCJY_SignOnlineStatistics_residenceCount4" class="fontfamily">'
 endTag="</span>"
 def test():
@@ -44,3 +45,12 @@ if __name__ == "__main__":
 	f.close
 	sN = getSecondSellNumber(yestStr,html)
 	insertToDb(yestStr,sN)
+	url_final = myUrl % (yestStr,sN);
+	print url_final
+	try:
+		req = urllib2.Request(url_final)
+	       	html=urllib2.urlopen(req).read().decode("utf-8").encode("gb18030")
+	except Exception,e:
+		print e
+		print "error"
+

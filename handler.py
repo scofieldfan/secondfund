@@ -20,5 +20,5 @@ for f in list:
 	       	html=urllib2.urlopen(req).read().decode("utf-8").encode("gb18030")
 	 except:
 		print "error"
-       	 #crawl.insertToDb(yesStr,sn)
+       	 crawl.insertToDb(yesStr,sn)
 	 
