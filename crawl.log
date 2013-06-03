@@ -162,3 +162,16 @@ Branch master set up to track remote branch master from origin.
 [20130602 09:00:02] 20130601 second fund sell no is 35
 [20130602 09:00:02] insert into secondfund values('20130601','35')
 http://secondhandhouse.duapp.com/insert.jsp?fundate=20130601&num=35
+[master 838eb0c] 20130602 add crawl data
+ 2 files changed, 1810 insertions(+), 0 deletions(-)
+ create mode 100644 data/fund.out.20130601
+Warning: Permanently added the RSA host key for IP address '207.97.227.239' to the list of known hosts.
+To git@github.com:YouYouCook/secondfund.git
+   250eda1..838eb0c  master -> master
+Branch master set up to track remote branch master from origin.
+***************20130603 begin crawl web **************************************
+[20130603 09:00:01] begin crawl http://www.bjjs.gov.cn/tabid/2167/Default.aspx
+[20130603 09:00:26] write file /search/secondfund/data/fund.out.20130602
+[20130603 09:00:26] 20130602 second fund sell no is 37
+[20130603 09:00:26] insert into secondfund values('20130602','37')
+http://secondhandhouse.duapp.com/insert.jsp?fundate=20130602&num=37
