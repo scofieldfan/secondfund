@@ -12,9 +12,10 @@ def test():
 def insertToDb(dateStr,sellNo):
 	con = MySQLdb.connect('10.12.131.124','root','123456','fangchan')
 	cur = con.cursor()
-	sqlStr = "insert into secondfund values('%s','%s')" % (dateStr,sellNo)
+	sqlStr = "insert into secondfund values ('%s','%s');" % (dateStr,sellNo)
 	log(sqlStr)
 	cur.execute(sqlStr);
+	return sqlStr;
 def getSecondSellNumber(yestStr,html):
 	indexS = html.find(startTag);	
 	if(indexS!=-1):
@@ -44,7 +45,10 @@ if __name__ == "__main__":
 	f.write(html)
 	f.close
 	sN = getSecondSellNumber(yestStr,html)
-	insertToDb(yestStr,sN)
+	Sql = insertToDb(yestStr,sN)
+	f = file("bakup.sql",'a')
+	log("write file backup.sql ")
+	f.write(Sql)
 	url_final = myUrl % (yestStr,sN);
 	print url_final
 	try:
