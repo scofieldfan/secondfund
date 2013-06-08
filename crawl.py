@@ -48,7 +48,7 @@ if __name__ == "__main__":
 	Sql = insertToDb(yestStr,sN)
 	f = file("bakup.sql",'a')
 	log("write file backup.sql ")
-	f.write(Sql)
+	f.write(Sql+"\r\n")
 	url_final = myUrl % (yestStr,sN);
 	print url_final
 	try:
