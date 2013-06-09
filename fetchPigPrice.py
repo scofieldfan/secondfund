@@ -3,7 +3,8 @@ import urllib
 import urllib2
 import datetime
 
-myUrl='http://www.zhujiage.com.cn/Article/showlist.php?tid=24&TotalResult=38533&PageNo=%s'
+#myUrl='http://www.zhujiage.com.cn/Article/showlist.php?tid=24&TotalResult=38533&PageNo=%s'
+myUrl='http://www.sn110.com/news/jiage/pig/index.htm'
 def test():
 	print "hello,crawl test function"
 def insertToDb(dateStr,sellNo):
@@ -48,19 +49,22 @@ def log(sth):
 	nowStr = datetime.datetime.now().strftime("[%Y%m%d %H:%M:%S] ")
 	print nowStr+sth
 if __name__ == "__main__":
-	simpleList=[]
-	for i in range(1,714):
-		url = myUrl % i
-		log("begin crawl "+ url)
-		req= urllib2.Request(url)
-		html=urllib2.urlopen(req).read()
-		listHtml =  getSubString(html,'<div class="lmlist">','<div class="showpage">');
-		resultList= getSubStringList(listHtml,'<A','</A>')
-		for re in resultList:
-			if re.find('山东')!=-1:
-				log(re)
-				simpleList.append(re+"\n")
-		writeFile("山东PigPrice.out",simpleList)
+    simpleList=[]
+    for i in range(1,10):
+        url = myUrl 
+        log("begin crawl "+ url)
+        req= urllib2.Request(url)
+        data={"__EVENTTARGET":"Pager2","__EVENTARGUMENT":i}
+        data = urllib.urlencode(data)
+        html=urllib2.urlopen(req,data).read()
+        print html
+		#listHtml =  getSubString(html,'<div class="lmlist">','<div class="showpage">');
+		#resultList= getSubStringList(listHtml,'<A','</A>')
+		#for re in resultList:
+		#	if re.find('山东')!=-1:
+		#		log(re)
+		#		simpleList.append(re+"\n")
+    	#writeFile("PigPrice.out2",simpleList)
 		
 
 		
