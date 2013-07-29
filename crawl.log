@@ -904,3 +904,21 @@ Branch master set up to track remote branch master from origin.
 [20130729 07:40:04] insert into secondfund values ('20130728','61');
 [20130729 07:40:04] write file backup.sql 
 http://secondhandhouse.duapp.com/insert.jsp?fundate=20130728&num=61
+[master a74fd0a] 20130729 add crawl data
+ 3 files changed, 1821 insertions(+), 0 deletions(-)
+ create mode 100644 data/fund.out.20130728
+To git@github.com:YouYouCook/secondfund.git
+   1a58f99..a74fd0a  master -> master
+Branch master set up to track remote branch master from origin.
+***************20130730 begin crawl web **************************************
+[20130730 07:40:01] begin crawl http://www.bjjs.gov.cn/tabid/2167/Default.aspx
+Traceback (most recent call last):
+  File "/search/secondfund/crawl.py", line 40, in ?
+    html=urllib2.urlopen(req).read().decode("utf-8").encode("gb18030")
+  File "/usr/lib64/python2.4/socket.py", line 285, in read
+    data = self._sock.recv(recv_size)
+  File "/usr/lib64/python2.4/httplib.py", line 480, in read
+    s = self.fp.read(amt)
+  File "/usr/lib64/python2.4/socket.py", line 303, in read
+    data = self._sock.recv(recv_size)
+socket.error: (104, 'Connection reset by peer')
