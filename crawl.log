@@ -922,3 +922,48 @@ Traceback (most recent call last):
   File "/usr/lib64/python2.4/socket.py", line 303, in read
     data = self._sock.recv(recv_size)
 socket.error: (104, 'Connection reset by peer')
+[master 6c66b83] 20130730 add crawl data
+ 1 files changed, 18 insertions(+), 0 deletions(-)
+To git@github.com:YouYouCook/secondfund.git
+   a74fd0a..6c66b83  master -> master
+Branch master set up to track remote branch master from origin.
+***************20130731 begin crawl web **************************************
+[20130731 07:40:02] begin crawl http://www.bjjs.gov.cn/tabid/2167/Default.aspx
+[20130731 07:40:04] write file /search/secondfund/data/fund.out.20130730
+Traceback (most recent call last):
+  File "/search/secondfund/crawl.py", line 45, in ?
+    f.write(html)
+IOError: [Errno 28] No space left on device
+error: file write error (No space left on device)
+fatal: unable to write sha1 file
+error: unable to create temporary sha1 filename : No space left on device
+
+error: crawl.log: failed to insert into database
+error: unable to index file crawl.log
+fatal: updating files failed
+error: failed to write new configuration file .git/config.lock
+error: failed to write new configuration file .git/config.lock
+Everything up-to-date
+Branch master set up to track remote branch master from origin.
+***************20130801 begin crawl web **************************************
+[20130801 07:40:02] begin crawl http://www.bjjs.gov.cn/tabid/2167/Default.aspx
+[20130801 07:40:04] write file /search/secondfund/data/fund.out.20130731
+Traceback (most recent call last):
+  File "/search/secondfund/crawl.py", line 45, in ?
+    f.write(html)
+IOError: [Errno 28] No space left on device
+error: file write error (No space left on device)
+fatal: unable to write sha1 file
+error: file write error (No space left on device)
+fatal: unable to write sha1 file
+error: failed to write new configuration file .git/config.lock
+error: failed to write new configuration file .git/config.lock
+Everything up-to-date
+Branch master set up to track remote branch master from origin.
+***************20130802 begin crawl web **************************************
+[20130802 07:40:01] begin crawl http://www.bjjs.gov.cn/tabid/2167/Default.aspx
+[20130802 07:40:01] write file /search/secondfund/data/fund.out.20130801
+[20130802 07:40:01] 20130801 second fund sell no is 650
+[20130802 07:40:01] insert into secondfund values ('20130801','650');
+[20130802 07:40:02] write file backup.sql 
+http://secondhandhouse.duapp.com/insert.jsp?fundate=20130801&num=650
