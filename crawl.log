@@ -967,3 +967,18 @@ Branch master set up to track remote branch master from origin.
 [20130802 07:40:01] insert into secondfund values ('20130801','650');
 [20130802 07:40:02] write file backup.sql 
 http://secondhandhouse.duapp.com/insert.jsp?fundate=20130801&num=650
+[master 956f60e] 20130802 add crawl data
+ 4 files changed, 1919 insertions(+), 0 deletions(-)
+ create mode 100644 data/fund.out.20130730
+ create mode 100644 data/fund.out.20130731
+ create mode 100644 data/fund.out.20130801
+To git@github.com:YouYouCook/secondfund.git
+   6c66b83..956f60e  master -> master
+Branch master set up to track remote branch master from origin.
+***************20130803 begin crawl web **************************************
+[20130803 07:40:01] begin crawl http://www.bjjs.gov.cn/tabid/2167/Default.aspx
+[20130803 07:40:01] write file /search/secondfund/data/fund.out.20130802
+[20130803 07:40:01] 20130802 second fund sell no is 263
+[20130803 07:40:01] insert into secondfund values ('20130802','263');
+[20130803 07:40:01] write file backup.sql 
+http://secondhandhouse.duapp.com/insert.jsp?fundate=20130802&num=263
