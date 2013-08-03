@@ -878,3 +878,4 @@ insert into secondfund values ('20130727','538');
 insert into secondfund values ('20130728','61');
 insert into secondfund values ('20130801','650');
 insert into secondfund values ('20130802','263');
+insert into secondfund values ('20130803','386');
