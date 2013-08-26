@@ -45,7 +45,8 @@ if __name__ == "__main__":
 	f.write(html)
 	f.close
 	sN = getSecondSellNumber(yestStr,html)
-	Sql = insertToDb(yestStr,sN)
+	Sql = "insert into secondfund values ('%s','%s');" % (yestStr,sN)
+	#Sql = insertToDb(yestStr,sN)
 	f = file("bakup.sql",'a')
 	log("write file backup.sql ")
 	f.write(Sql+"\r\n")
