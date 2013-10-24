@@ -1011,3 +1011,5 @@ insert into secondfund values ('20131021','686');
 insert into secondfund values ('20131021','686');
 insert into secondfund values ('20131022','656');
 insert into secondfund values ('20131022','656');
+insert into secondfund values ('20131023','502');
+insert into secondfund values ('20131023','502');
