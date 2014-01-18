@@ -1174,3 +1174,5 @@ insert into secondfund values ('20140115','515');
 insert into secondfund values ('20140115','515');
 insert into secondfund values ('20140116','463');
 insert into secondfund values ('20140116','463');
+insert into secondfund values ('20140117','550');
+insert into secondfund values ('20140117','550');
