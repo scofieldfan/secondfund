@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>EasySite</title>
+  <link rel="stylesheet" type="text/css" href="Install.css">
+</head>
+<body BOTTOMMARGIN="5" LEFTMARGIN="5" TOPMARGIN="5" RIGHTMARGIN="5" MARGINWIDTH="0" MARGINHEIGHT="0">
+  <img src="logo.gif" border="0">
+  <br />
+<!-- tags excluded on purpose so that installation feedback messages are displayed
+</body>
+</html>
+-->                                                           
+<h1>Unhandled Error</h1><h2>Error Details</h2><table cellspacing=0 cellpadding=0 border=0><tr><td><b>File</b></td><td><b></b></td></tr><tr><td><b>Error</b>&nbsp;&nbsp;</td><td><b>数据库 'bjjsweb' 的事务日志已满。若要查明无法重用日志中的空间的原因，请参阅 sys.databases 中的 log_reuse_wait_desc 列。</b></td></tr></table><br><br></body></html><html>
+<head>
+  <title>EasySite</title>
+  <link rel="stylesheet" type="text/css" href="Install.css">
+</head>
+<body BOTTOMMARGIN="5" LEFTMARGIN="5" TOPMARGIN="5" RIGHTMARGIN="5" MARGINWIDTH="0" MARGINHEIGHT="0">
+  <img src="logo.gif" border="0">
+  <br />
+<!-- tags excluded on purpose so that installation feedback messages are displayed
+</body>
+</html>
+-->                                                           
+<h1>Unauthorized Access Error</h1><h2>Error Details</h2><table cellspacing=0 cellpadding=0 border=0><tr><td><b>File</b></td><td><b>D:\2011web181\Portals\_default\\Logs\LogFailures.xml.resources</b></td></tr><tr><td><b>Error</b>&nbsp;&nbsp;</td><td><b>Access to the path 'D:\2011web181\Portals\_default\Logs\LogFailures.xml.resources' is denied. The Windows User Account listed below must have Read/Write Privileges to this path.</b></td></tr></table><br><br></body></html>
